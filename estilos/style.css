@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 main {
   height: 100vh;
 }
@@ -76,4 +77,30 @@ button.x {
   font-size: 20px;
   cursor: pointer;
   z-index: 1000;
+}
+
+@media (min-width: 768px) {
+
+  #fotos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #fotos img {
+    max-width: 260px;
+  }
+
+  #modal img {
+    max-width: 70vw;
+    max-height: 80vh;
+  }
+
+  .x {
+    top: 30px;
+    right: 40px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
 }
