@@ -43,7 +43,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section#galeriafotos {
@@ -75,7 +75,7 @@ article#fotos {
 
 #fotos img:hover {
   transform: scale(1.03);
-  border-color: 3px solid #d4a017;
+  border-color: #d4a017;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25)
 }
 
@@ -128,7 +128,7 @@ button.x {
 @media (min-width: 768px) {
 
   article#fotos {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 12px;
     justify-items: center;
     align-items: start;
